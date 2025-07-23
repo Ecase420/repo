@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "quest_items:frozen_skull"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "quest_items:desert_rose"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "quest_items:stone_idol"
+        }
+      ]
+    }
+  ]
+}
