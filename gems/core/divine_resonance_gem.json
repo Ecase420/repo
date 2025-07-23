@@ -1,0 +1,62 @@
+{
+    "type": "apotheosis:gem",
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:healing",
+            "gem_class": {
+                "key": "armor",
+                "types": [
+                    "apotheosis:helmet",
+                    "apotheosis:chestplate",
+                    "apotheosis:leggings",
+                    "apotheosis:boots"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 3.0,
+                "chipped": 6.0,
+                "flawed": 9.0,
+                "normal": 12.0,
+                "flawless": 16.0,
+                "perfect": 24.0
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:bow",
+            "modifiers": [
+                {
+                    "attribute": "spell_power:holy",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 2.0,
+                        "chipped": 4.0,
+                        "flawed": 6.0,
+                        "normal": 8.0,
+                        "flawless": 12.0,
+                        "perfect": 18.0
+                    }
+                },
+                {
+                    "attribute": "spell_power:unholy",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": -1.0,
+                        "chipped": -2.0,
+                        "flawed": -3.0,
+                        "normal": -4.0,
+                        "flawless": -6.0,
+                        "perfect": -9.0
+                    }
+                }
+            ]
+        }
+    ]
+}

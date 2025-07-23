@@ -1,0 +1,75 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:blood",
+            "gem_class": {
+                "key": "weapons",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:trident"
+                ]
+            },
+            "operation": "add_value",
+            "values": {
+                "cracked": 5.0,
+                "chipped": 10.0,
+                "flawed": 15.0,
+                "normal": 20.0,
+                "flawless": 28.0,
+                "perfect": 40.0
+            }
+        },
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:chestplate",
+            "modifiers": [
+                {
+                    "attribute": "spell_power:generic",
+                    "operation": "add_multiplied_base",
+                    "values": {
+                        "cracked": 0.05,
+                        "chipped": 0.1,
+                        "flawed": 0.15,
+                        "normal": 0.2,
+                        "flawless": 0.3,
+                        "perfect": 0.45
+                    }
+                },
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "values": {
+                        "cracked": -0.05,
+                        "chipped": -0.1,
+                        "flawed": -0.15,
+                        "normal": -0.2,
+                        "flawless": -0.25,
+                        "perfect": -0.35
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:unholy",
+            "gem_class": "apotheosis:helmet",
+            "operation": "add_value",
+            "values": {
+                "cracked": 3.0,
+                "chipped": 6.0,
+                "flawed": 9.0,
+                "normal": 12.0,
+                "flawless": 18.0,
+                "perfect": 26.0
+            }
+        }
+    ]
+}

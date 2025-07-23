@@ -1,0 +1,72 @@
+{
+    "type": "apotheosis:gem",
+    "unique": true,
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:shadow",
+            "gem_class": {
+                "key": "dark_weapons",
+                "types": [
+                    "apotheosis:melee_weapon",
+                    "apotheosis:bow"
+                ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.15,
+                "chipped": 0.3,
+                "flawed": 0.45,
+                "normal": 0.6,
+                "flawless": 0.8,
+                "perfect": 1.2
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:soul",
+            "gem_class": "apotheosis:helmet",
+            "operation": "add_value",
+            "values": {
+                "cracked": 4.0,
+                "chipped": 8.0,
+                "flawed": 12.0,
+                "normal": 16.0,
+                "flawless": 22.0,
+                "perfect": 32.0
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:critical_damage",
+            "gem_class": "apotheosis:leggings",
+            "operation": "add_multiplied_total",
+            "values": {
+                "cracked": 0.1,
+                "chipped": 0.2,
+                "flawed": 0.3,
+                "normal": 0.4,
+                "flawless": 0.55,
+                "perfect": 0.8
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:resistance.generic",
+            "gem_class": "apotheosis:shield",
+            "operation": "add_value",
+            "values": {
+                "cracked": 0.05,
+                "chipped": 0.1,
+                "flawed": 0.15,
+                "normal": 0.2,
+                "flawless": 0.3,
+                "perfect": 0.45
+            }
+        }
+    ]
+}

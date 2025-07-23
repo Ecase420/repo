@@ -1,0 +1,74 @@
+{
+    "type": "apotheosis:gem",
+    "weights": {
+        "quality": 0.1,
+        "weight": 100
+    },
+    "bonuses": [
+        {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": "apotheosis:breaker",
+            "modifiers": [
+                {
+                    "attribute": "spell_power:nature",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 3.0,
+                        "chipped": 6.0,
+                        "flawed": 9.0,
+                        "normal": 12.0,
+                        "flawless": 16.0,
+                        "perfect": 24.0
+                    }
+                },
+                {
+                    "attribute": "spell_power:earth",
+                    "operation": "add_value",
+                    "values": {
+                        "cracked": 2.0,
+                        "chipped": 4.0,
+                        "flawed": 6.0,
+                        "normal": 8.0,
+                        "flawless": 11.0,
+                        "perfect": 16.0
+                    }
+                }
+            ]
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:water",
+            "gem_class": {
+                "key": "core_armor",
+                "types": [
+                    "apotheosis:chestplate",
+                    "apotheosis:leggings"
+                ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+                "cracked": 0.1,
+                "chipped": 0.25,
+                "flawed": 0.4,
+                "normal": 0.55,
+                "flawless": 0.7,
+                "perfect": 1.0
+            }
+        },
+        {
+            "type": "apotheosis:attribute",
+            "attribute": "spell_power:air",
+            "gem_class": "apotheosis:boots",
+            "operation": "add_value",
+            "values": {
+                "cracked": 2.5,
+                "chipped": 5.0,
+                "flawed": 7.5,
+                "normal": 10.0,
+                "flawless": 13.0,
+                "perfect": 20.0
+            }
+        }
+    ]
+}
