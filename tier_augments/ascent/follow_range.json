@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.follow_range",
+        "operation": "add_multiplied_total",
+        "value": 1.3
+    },
+    "modifier_id": "apotheosis:ascent/follow_range",
+    "sort_index": 300,
+    "target": "monsters",
+    "tier": "ascent"
+}

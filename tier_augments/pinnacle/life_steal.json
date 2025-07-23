@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "apothic_attributes:life_steal",
+        "operation": "add_value",
+        "value": 0.08
+    },
+    "modifier_id": "apotheosis:pinnacle/life_steal",
+    "sort_index": 500,
+    "target": "monsters",
+    "tier": "pinnacle"
+}

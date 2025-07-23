@@ -1,0 +1,12 @@
+{
+    "type": "apotheosis:attribute",
+    "modifier": {
+        "attribute": "apothic_attributes:life_steal",
+        "operation": "add_value",
+        "value": 0.06
+    },
+    "modifier_id": "apotheosis:summit/life_steal",
+    "sort_index": 500,
+    "target": "monsters",
+    "tier": "summit"
+}
