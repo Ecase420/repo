@@ -1,0 +1,43 @@
+{
+	"weight": 0,
+	"quality": 0,
+	"mainhands": [{
+			"weight": 1,
+			"stack": {
+				"id": "minecraft:iron_sword",
+				"nbt": {
+					"Enchantments": [
+						{
+							"id": "minecraft:sharpness",
+							"lvl": 2
+						}
+					],
+					"display": {
+						"Name": "{\"text\":\"Frosted Iron Sword\",\"color\":\"aqua\",\"italic\":false}"
+					}
+				}
+			},
+            "drop_chance": 0.15
+		}
+	],
+	"offhands": [],
+	"boots": [],
+	"leggings": [],
+	"chestplates": [],
+	"helmets": [{
+		"weight": 1,
+		"stack": {
+			"id": "minecraft:netherite_helmet",
+			"nbt": {
+				"display": {
+					"Name": "{\"text\":\"Frost Warrior's Crown\",\"color\":\"dark_aqua\",\"italic\":false}"
+				}
+			}
+		},
+        "drop_chance": 0.1
+	}],
+	"tags": [
+		"frost_resistant",
+		"ice_warrior"
+	]
+}

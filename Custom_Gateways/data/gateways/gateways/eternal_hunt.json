@@ -1,0 +1,264 @@
+{
+    "type": "gateways:endless",
+    "size": "large",
+    "color": "#228B22",
+    "base_wave": {
+        "entities": [
+            {
+                "entity": "minecraft:wolf",
+                "nbt": {
+                    "Owner": "",
+                    "Sitting": 0,
+                    "Angry": 1
+                },
+                "count": 4
+            },
+            {
+                "entity": "minecraft:spider",
+                "count": 3
+            }
+        ],
+        "rewards": [
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:wolf",
+                "rolls": 8
+            },
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:spider",
+                "rolls": 6
+            },
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "minecraft:chests/jungle_temple",
+                "rolls": 2,
+                "desc": "rewards.gateways.loot_table.jungle_temple"
+            }
+        ],
+        "max_wave_time": 850,
+        "setup_time": 110
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 2,
+                "max": 14
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:spider",
+                    "count": 2
+                },
+                {
+                    "entity": "minecraft:skeleton",
+                    "modifiers": [
+                        {
+                            "type": "gateways:gear_set",
+                            "gear_set": "gateways:custom_hunter_gear"
+                        }
+                    ],
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.08
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:spider",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:skeleton",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/jungle_temple",
+                    "rolls": 2,
+                    "desc": "rewards.gateways.loot_table.jungle_temple"
+                }
+            ],
+            "max_wave_time": -25,
+            "setup_time": -4
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 4,
+                "max": 8
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:polar_bear",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.16
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:polar_bear",
+                    "rolls": 12
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "minecraft:bone",
+                        "count": 8
+                    }
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "minecraft:leather",
+                        "count": 4
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 6,
+                "max": 5
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:ravager",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.20
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "add_value",
+                    "value": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:ravager",
+                    "rolls": 16
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/village/village_weaponsmith",
+                    "rolls": 3,
+                    "desc": "rewards.gateways.loot_table.village_weaponsmith"
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "doggytalents:training_treat",
+                        "count": 2
+                    }
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 10,
+                "max": 3
+            },
+            "entities": [
+                {
+                    "entity": "twilightforest:minotaur",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "add_value",
+                    "value": 3
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "twilightforest:minotaur",
+                    "rolls": 20
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/stronghold_corridor",
+                    "rolls": 4,
+                    "desc": "rewards.gateways.loot_table.stronghold_corridor"
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "minecraft:bone",
+                        "count": 12
+                    }
+                },
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "doggytalents:training_treat",
+                        "count": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:explosion",
+            "strength": 3,
+            "fire": false,
+            "block_damage": false
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "minecraft:wolf",
+                "nbt": {
+                    "Angry": 1
+                },
+                "count": 4
+            }
+        }
+    ],
+    "boss_event": {
+        "mode": "name_plate"
+    },
+    "spawn_algorithm": "gateways:inward_spiral"
+}

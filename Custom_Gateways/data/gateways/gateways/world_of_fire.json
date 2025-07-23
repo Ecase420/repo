@@ -1,0 +1,194 @@
+{
+    "type": "gateways:endless",
+    "size": "large",
+    "color": "#CF352E",
+    "base_wave": {
+        "entities": [
+            {
+                "entity": "minecraft:zombie",
+                "modifiers": [
+                    {
+                        "type": "gateways:gear_set",
+                        "gear_set": "gateways:custom_fire_gear"
+                    },
+                    {
+                        "attribute": "apothic_attributes:fire_damage",
+                        "operation": "add_value",
+                        "value": 1
+                    }
+                ],
+                "count": 5
+            },
+            {
+                "entity": "minecraft:blaze",
+                "count": 2
+            }
+        ],
+        "rewards": [
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:zombie",
+                "rolls": 10
+            },
+            {
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:blaze",
+                "rolls": 8
+            },
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "minecraft:chests/nether_bridge",
+                "rolls": 3,
+                "desc": "rewards.gateways.loot_table.nether_bridge"
+            }
+        ],
+        "max_wave_time": 1000,
+        "setup_time": 140
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 3,
+                "max": 12
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:blaze",
+                    "count": 2
+                },
+                {
+                    "entity": "minecraft:magma_cube",
+                    "count": 3
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:blaze",
+                    "rolls": 8
+                },
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:magma_cube",
+                    "rolls": 6
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/nether_bridge",
+                    "rolls": 2,
+                    "desc": "rewards.gateways.loot_table.nether_bridge"
+                }
+            ],
+            "max_wave_time": -40,
+            "setup_time": -8
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 5,
+                "max": 7
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.08
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "minecraft:wither_skeleton",
+                    "rolls": 12
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/bastion_treasure",
+                    "rolls": 4,
+                    "desc": "rewards.gateways.loot_table.bastion_treasure"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 8,
+                "max": 4
+            },
+            "entities": [
+                {
+                    "entity": "cataclysm:ignis",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.20
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "add_value",
+                    "value": 2
+                },
+                {
+                    "attribute": "apothic_attributes:fire_damage",
+                    "operation": "add_value",
+                    "value": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "cataclysm:ignis",
+                    "rolls": 18
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "minecraft:chests/bastion_bridge",
+                    "rolls": 5,
+                    "desc": "rewards.gateways.loot_table.bastion_bridge"
+                }
+            ]
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:explosion",
+            "strength": 5,
+            "fire": true,
+            "block_damage": true
+        },
+        {
+            "type": "gateways:summon",
+            "entity": {
+                "entity": "minecraft:blaze",
+                "count": 4
+            }
+        }
+    ],
+    "boss_event": {
+        "mode": "name_plate"
+    },
+    "spawn_algorithm": "gateways:inward_spiral"
+}

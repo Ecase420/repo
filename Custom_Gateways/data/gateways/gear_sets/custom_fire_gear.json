@@ -1,0 +1,43 @@
+{
+	"weight": 0,
+	"quality": 0,
+	"mainhands": [{
+			"weight": 1,
+			"stack": {
+				"id": "minecraft:iron_sword",
+				"nbt": {
+					"Enchantments": [
+						{
+							"id": "minecraft:fire_aspect",
+							"lvl": 2
+						}
+					],
+					"display": {
+						"Name": "{\"text\":\"Blazing Iron Sword\",\"color\":\"red\",\"italic\":false}"
+					}
+				}
+			},
+            "drop_chance": 0.15
+		}
+	],
+	"offhands": [],
+	"boots": [],
+	"leggings": [],
+	"chestplates": [],
+	"helmets": [{
+		"weight": 1,
+		"stack": {
+			"id": "minecraft:netherite_helmet",
+			"nbt": {
+				"display": {
+					"Name": "{\"text\":\"Fire Warrior's Crown\",\"color\":\"dark_red\",\"italic\":false}"
+				}
+			}
+		},
+        "drop_chance": 0.1
+	}],
+	"tags": [
+		"fire_resistant",
+		"flame_warrior"
+	]
+}
